@@ -287,17 +287,6 @@ Key configuration files:
 ./mvnw jacoco:prepare-agent test jacoco:report
 ```
 
-## 📋 Future Enhancements
-
-- [ ] **Pagination & Filtering**: Add paging support for transaction lists
-- [ ] **Transaction Export**: Implement transaction history export (CSV/PDF)
-- [ ] **Currency Conversion**: Multi-currency conversion with real-time rates
-- [ ] **Audit Trail**: Comprehensive logging for all operations
-- [ ] **Rate Limiting**: API rate limiting for security
-- [ ] **Notification System**: Email/SMS notifications for transactions
-- [ ] **Transaction Categories**: Categorize transactions for better tracking
-- [ ] **Scheduled Transactions**: Support for recurring transactions
-
 ## 📞 Support & Contact
 
 - **Repository**: [ing-wallet-api](https://github.com/halilugur/ing-wallet-api)
