@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: wallet
+  datasource:
+    url: ${DATABASE_URL:jdbc:h2:file:./wallet-api}
+    driver-class-name: org.h2.Driver
+    username: ${DATABASE_USERNAME:wallet}
+    password: ${DATABASE_PASSWORD:wallet}
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
+    show-sql: ${SHOW_SQL:true}
+    properties:
+      hibernate:
+        format_sql: ${SHOW_SQL:true}
+  sql:
+    init:
+      mode: always
+  jackson:
+    default-property-inclusion: non_null
+    deserialization:
+      fail-on-unknown-properties: false
+  token:
+    secret: ${TOKEN_SECRET:FpPFKahU4Munj+iwM1Q088jtqyYe/DQ7R2LciSF4hmS3d3mlwuqLprNe2WG7823e}
+    expiration: ${TOKEN_EXPIRATION:1296000000}

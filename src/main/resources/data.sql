@@ -1,0 +1,22 @@
+merge into PUBLIC.USERS (ID, CREATED_AT, IS_ACTIVE, IS_DELETED, UPDATED_AT, FIRSTNAME, LASTNAME, PASSWORD, ROLE, TCKN)
+    values (1, '2025-08-02 22:56:18.165597 +03:00', true, false, '2025-08-02 22:56:18.165597 +03:00', 'Customer',
+            'Customer', '$2a$10$gH2AaZ5Evkdv.RtoOw5fjuK2KD8c2KydXdgeMOFOw.PIu1tUc71N6', 'CUSTOMER', '10000000001');
+
+merge into PUBLIC.USERS (ID, CREATED_AT, IS_ACTIVE, IS_DELETED, UPDATED_AT, FIRSTNAME, LASTNAME, PASSWORD, ROLE, TCKN)
+    values (2, '2025-08-02 22:56:18.165597 +03:00', true, false, '2025-08-02 22:56:18.165597 +03:00', 'Employee',
+            'Employee', '$2a$10$gH2AaZ5Evkdv.RtoOw5fjuK2KD8c2KydXdgeMOFOw.PIu1tUc71N6', 'EMPLOYEE', '10000000002');
+
+merge into WALLETS (ID, CREATED_AT, IS_ACTIVE, IS_DELETED, UPDATED_AT, BALANCE, CAN_SHOPPING, CAN_WITHDRAW, CURRENCY,
+                    NAME, USABLE_BALANCE, USER_ID)
+    values (1, '2025-08-03 16:09:57.107702 +03:00', true, false, '2025-08-03 16:09:57.107751 +03:00', 0.00, true, true,
+            'TRY', 'Turkish Lira', 0.00, 1);
+
+merge into WALLETS (ID, CREATED_AT, IS_ACTIVE, IS_DELETED, UPDATED_AT, BALANCE, CAN_SHOPPING, CAN_WITHDRAW, CURRENCY,
+                    NAME, USABLE_BALANCE, USER_ID)
+    values (2, '2025-08-03 16:09:57.107702 +03:00', true, false, '2025-08-03 16:09:57.107751 +03:00', 0.00, true, true,
+            'EUR', 'Euro', 0.00, 1);
+
+merge into WALLETS (ID, CREATED_AT, IS_ACTIVE, IS_DELETED, UPDATED_AT, BALANCE, CAN_SHOPPING, CAN_WITHDRAW, CURRENCY,
+                    NAME, USABLE_BALANCE, USER_ID)
+    values (3, '2025-08-03 16:09:57.107702 +03:00', true, false, '2025-08-03 16:09:57.107751 +03:00', 0.00, true, true,
+            'USD', 'Dollar', 0.00, 1);
